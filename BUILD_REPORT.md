@@ -42,3 +42,65 @@
   padre, violando la `ForeignKey` real de la entidad. Detalle en
   `handoffs/INCIDENCIAS-68-LaLupaJusta.md`, I-02.
 - Sin UI todavía — eso es la Parte 3.
+
+## Parte 3: tema, pantallas y arte
+
+- `./gradlew clean testDebugUnitTest lintDebug assembleDebug`: BUILD SUCCESSFUL, **72 tests, 0
+  fallos**, lint sin errores, APK real generado (13 452 987 bytes).
+- Tema con contraste WCAG verificado — `onSecondary` es Profundo, no blanco (única de las 5 apps
+  del lote con esta combinación).
+- **Bug real corregido en `resolverCaso`** (Task 5): construía la muestra filtrando la población
+  ya única por pertenencia, lo que eliminaba cualquier repetición antes de que `MotorSesgo`
+  pudiera verla. Se corrigió mapeando la lista de ids elegidos directamente (preserva
+  repeticiones y orden). **Verificado jugando de verdad en el emulador** (no solo con el test
+  unitario): tocar dos veces a la misma persona en "El Delegado del Salón" mostró el mensaje
+  "Tocaste a la misma persona más de una vez" — el sesgo por repetición nunca se había podido
+  disparar jugando antes de esta corrección.
+- Los 8 casos comparten `CasoScreen`, una sola pantalla parametrizada.
+- Población de hasta 48 personajes en `LazyVerticalGrid`, con altura delimitada por `weight(1f)`
+  dentro de una `Column` sin `verticalScroll` propio — nunca anidada en un contenedor que ya hace
+  scroll (sección 7.1 punto 6 del maestro).
+- Objetivo táctil de los personajes: 64dp (excepción documentada frente a los 120dp de la sección
+  6 — con 30-48 personajes visibles a la vez, 120dp es físicamente imposible). Se sintió razonable
+  en el emulador; queda pendiente probarlo en un dispositivo físico real.
+- **Arte SVG → VectorDrawable** (sección 4.0/4.1.5, script
+  `documentos-fuente/_scripts-generadores/gen_lalupajusta_vector.py`): 8 iconos de caso, 11
+  insignias, 12 avatares, 9 fondos de escena, portada e ilustración de resultado — 42 piezas,
+  `aapt2 compile` limpio. Iteradas 2 vueltas mirando la hoja de contactos en Chrome antes de
+  integrar (ver incidencias I-03 e I-05 sobre bugs reales encontrados en esa revisión).
+- Arte Canvas (dato en vivo, sección 4.3): `IlustracionPersonaje` — color por grupo asignado en
+  tiempo de ejecución, 30-48 instancias por caso.
+- Chihua: las 6 poses ya generadas se recortaron, se les quitó el fondo y se convirtieron a WebP
+  con un script Python (Pillow) — cajas de recorte calculadas por detección automática de
+  contenido (columnas/filas sin píxeles no blancos), no a ojo. `app/src/main/res/drawable-nodpi/`
+  pesa 172 KB.
+- **Pantalla de perfil completa** (sección 5.11 del maestro / sección 0.6b del handoff): alias +
+  12 avatares reales, se elige en el onboarding (página 5) y se puede cambiar después desde
+  `PerfilScreen`, accesible desde el Home. El botón de perfil del Home **no** navega al parental
+  gate — ese es un botón de ajustes aparte (el ícono de engranaje).
+- **Desbloqueo por progreso real** (sección 5.1 / sección 0.6a del handoff): los 3 primeros casos
+  del orden semilla abiertos desde el arranque, el resto bloqueado con la condición visible
+  ("Completa N caso(s) más"), calculado con `MotorProgreso.estaDesbloqueado` — sin columna nueva
+  en `CasoEntity`. Verificado jugando: con 0 completados había 3 abiertos; al resolver 1, el caso
+  de orden 4 se desbloqueó solo, sin reinstalar la app (gracias a `LifecycleResumeEffect` en la
+  ruta Home).
+- `MainActivity` corregido respecto al texto del plan: `LaunchedEffect` dentro de `setContent`,
+  nunca `runBlocking` en `onCreate` (bug conocido de la sección 1.9 del handoff).
+- **Ciclo real jugado en el emulador `fabrica34`** (sección 10.3 del maestro, obligatorio):
+  onboarding completo (5 páginas, incluida la de perfil) → Home con datos reales → caso con sesgo
+  de grupo (predicción "saltar_soga" vs. real "futbol", explicación correcta) → confirmar sin
+  penalización → volver al Home y ver el progreso actualizado (1 de 8) y el siguiente caso
+  desbloqueado → segundo caso con sesgo por repetición, verificado en vivo. Emulador cerrado
+  limpio al terminar (`adb emu kill`); no se creó ningún AVD nuevo (`-list-avds` sigue
+  devolviendo solo `fabrica34`).
+- Dos bugs de arte encontrados y corregidos **jugando en el emulador, no en la hoja de
+  contactos** (sección 4.1.5 solo prueba a tamaño declarado, no como lo estira el layout real):
+  el comentario XML con `--` que rompía la compilación de las 42 piezas (I-03), y el fondo de
+  escena que se distorsionaba al estirarse con `ContentScale.Crop` sobre una pantalla vertical
+  (I-05) — dos vueltas de corrección hasta que el fondo se vio bien instalado de verdad.
+- Corrección sobre el texto del plan (Task 7/8): los imports `androidx.compose.foundation.layout.weight`
+  y `androidx.compose.ui.test.assertExists` no existen como tales — son miembros de
+  `ColumnScope`/`RowScope` y de `SemanticsNodeInteraction` respectivamente, se resuelven solos sin
+  import (I-04).
+- Sumado `nombre` a `PersonajePoblacion` (dominio) para que los lectores de pantalla lean el
+  nombre real de cada personaje en los `contentDescription`, no su id interno.
