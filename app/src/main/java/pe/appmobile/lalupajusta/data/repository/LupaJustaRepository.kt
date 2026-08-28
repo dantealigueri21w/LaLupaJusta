@@ -3,6 +3,7 @@ package pe.appmobile.lalupajusta.data.repository
 import pe.appmobile.lalupajusta.data.AppDatabase
 import pe.appmobile.lalupajusta.data.entity.CasoEntity
 import pe.appmobile.lalupajusta.data.entity.MuestraArmadaEntity
+import pe.appmobile.lalupajusta.data.entity.PerfilEntity
 import pe.appmobile.lalupajusta.data.entity.RachaEntity
 import pe.appmobile.lalupajusta.data.entity.RepasoPendienteEntity
 import pe.appmobile.lalupajusta.data.entity.ResultadoCasoEntity
@@ -13,6 +14,7 @@ import pe.appmobile.lalupajusta.domain.engine.MotorProgreso
 import pe.appmobile.lalupajusta.domain.engine.MotorRepaso
 import pe.appmobile.lalupajusta.domain.engine.MotorSesgo
 import pe.appmobile.lalupajusta.domain.model.CasoRegistrado
+import pe.appmobile.lalupajusta.domain.model.Perfil
 import pe.appmobile.lalupajusta.domain.model.PersonajePoblacion
 import pe.appmobile.lalupajusta.domain.model.RepasoPendiente
 
@@ -32,6 +34,13 @@ class LupaJustaRepository(private val db: AppDatabase) {
         db.casoDao().insertarTodos(SeedData.casos)
         db.personajePoblacionDao().insertarTodos(SeedData.poblaciones)
         db.insigniaDao().insertarTodas(SeedData.insignias)
+    }
+
+    suspend fun obtenerPerfil(): Perfil? =
+        db.perfilDao().obtener()?.let { Perfil(alias = it.alias, avatarId = it.avatarId) }
+
+    suspend fun guardarPerfil(alias: String, avatarId: Int) {
+        db.perfilDao().guardar(PerfilEntity(alias = alias, avatarId = avatarId))
     }
 
     suspend fun obtenerCasos(): List<CasoEntity> = db.casoDao().obtenerTodos()
