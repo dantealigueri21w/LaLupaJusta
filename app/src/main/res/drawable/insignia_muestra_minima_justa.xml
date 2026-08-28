@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Insignia "muestra_minima_justa" de La Lupa Justa. Generada por gen_lalupajusta_vector.py, no editar a mano. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="120dp" android:height="120dp"
+    android:viewportWidth="240" android:viewportHeight="240">
+    <path android:pathData="M120,8 A112,112 0 1 1 119.9,8 Z"><aapt:attr name="android:fillColor"><gradient android:type="radial" android:centerX="91" android:centerY="72" android:gradientRadius="200"><item android:offset="0" android:color="#F7F4FA"/><item android:offset="0.55" android:color="#EFE7F5"/><item android:offset="1" android:color="#6B4E8E"/></gradient></aapt:attr></path>
+    <path android:pathData="M120,8 A112,112 0 1 1 119.9,8 Z" android:strokeColor="#2B2438" android:strokeWidth="5"/>
+    <path android:pathData="M120,24 A96,96 0 1 1 119.9,24 Z" android:strokeColor="#E0A438" android:strokeWidth="3" android:strokeAlpha="0.65"/>
+    <path android:pathData="M104,150 Q98,118 112,108 Q120,102 128,108 Q142,118 136,150 Z" android:fillColor="#6B4E8E"/>
+    <path android:pathData="M120,88 m-16,0 a16,16 0 1 0 32,0 a16,16 0 1 0 -32,0" android:fillColor="#6B4E8E"/>
+    <path android:pathData="M148,110 L158,122 L178,96" android:strokeColor="#4FA88A" android:strokeWidth="9" android:strokeLineCap="round"/>
+</vector>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Insignia "pueblo_completo" de La Lupa Justa. Generada por gen_lalupajusta_vector.py, no editar a mano. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="120dp" android:height="120dp"
+    android:viewportWidth="240" android:viewportHeight="240">
+    <path android:pathData="M120,8 A112,112 0 1 1 119.9,8 Z"><aapt:attr name="android:fillColor"><gradient android:type="radial" android:centerX="91" android:centerY="72" android:gradientRadius="200"><item android:offset="0" android:color="#F7F4FA"/><item android:offset="0.55" android:color="#EFE7F5"/><item android:offset="1" android:color="#6B4E8E"/></gradient></aapt:attr></path>
+    <path android:pathData="M120,8 A112,112 0 1 1 119.9,8 Z" android:strokeColor="#2B2438" android:strokeWidth="5"/>
+    <path android:pathData="M120,24 A96,96 0 1 1 119.9,24 Z" android:strokeColor="#E0A438" android:strokeWidth="3" android:strokeAlpha="0.65"/>
+    <path android:pathData="M181,119 m-10,0 a10,10 0 1 0 20,0 a10,10 0 1 0 -20,0" android:fillColor="#E0A438" android:fillAlpha="0.9"/>
+    <path android:pathData="M173,127 L173,117 L181,109 L189,117 L189,127 Z" android:fillColor="#6B4E8E"/>
+    <path android:pathData="M168,102 m-10,0 a10,10 0 1 0 20,0 a10,10 0 1 0 -20,0" android:fillColor="#E0A438" android:fillAlpha="0.9"/>
+    <path android:pathData="M160,110 L160,100 L168,92 L176,100 L176,110 Z" android:fillColor="#6B4E8E"/>
+    <path android:pathData="M151,89 m-10,0 a10,10 0 1 0 20,0 a10,10 0 1 0 -20,0" android:fillColor="#E0A438" android:fillAlpha="0.9"/>
+    <path android:pathData="M143,97 L143,87 L151,79 L159,87 L159,97 Z" android:fillColor="#6B4E8E"/>
+    <path android:pathData="M131,83 m-10,0 a10,10 0 1 0 20,0 a10,10 0 1 0 -20,0" android:fillColor="#E0A438" android:fillAlpha="0.9"/>
+    <path android:pathData="M123,91 L123,81 L131,73 L139,81 L139,91 Z" android:fillColor="#6B4E8E"/>
+    <path android:pathData="M109,83 m-10,0 a10,10 0 1 0 20,0 a10,10 0 1 0 -20,0" android:fillColor="#E0A438" android:fillAlpha="0.9"/>
+    <path android:pathData="M101,91 L101,81 L109,73 L117,81 L117,91 Z" android:fillColor="#6B4E8E"/>
+    <path android:pathData="M89,89 m-10,0 a10,10 0 1 0 20,0 a10,10 0 1 0 -20,0" android:fillColor="#E0A438" android:fillAlpha="0.9"/>
+    <path android:pathData="M81,97 L81,87 L89,79 L97,87 L97,97 Z" android:fillColor="#6B4E8E"/>
+    <path android:pathData="M72,102 m-10,0 a10,10 0 1 0 20,0 a10,10 0 1 0 -20,0" android:fillColor="#E0A438" android:fillAlpha="0.9"/>
+    <path android:pathData="M64,110 L64,100 L72,92 L80,100 L80,110 Z" android:fillColor="#6B4E8E"/>
+    <path android:pathData="M59,119 m-10,0 a10,10 0 1 0 20,0 a10,10 0 1 0 -20,0" android:fillColor="#E0A438" android:fillAlpha="0.9"/>
+    <path android:pathData="M51,127 L51,117 L59,109 L67,117 L67,127 Z" android:fillColor="#6B4E8E"/>
+</vector>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Portada / splash de La Lupa Justa. Pieza hero (detallada). Generada por
+     documentos-fuente/_scripts-generadores/gen_lalupajusta_vector.py, no editar a mano. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="240dp" android:height="240dp"
+    android:viewportWidth="240" android:viewportHeight="240">
+    <path android:pathData="M0,0 L240,0 L240,240 L0,240 Z"><aapt:attr name="android:fillColor"><gradient android:type="linear" android:startX="120" android:startY="0" android:endX="120" android:endY="240"><item android:offset="0" android:color="#6B4E8E"/><item android:offset="0.55" android:color="#9C82B8"/><item android:offset="1" android:color="#F7F4FA"/></gradient></aapt:attr></path>
+    <path android:pathData="M70,52 m-68,0 a68,68 0 1 0 136,0 a68,68 0 1 0 -136,0"><aapt:attr name="android:fillColor"><gradient android:type="radial" android:centerX="70" android:centerY="52" android:gradientRadius="68"><item android:offset="0" android:color="#FCEBBE"/><item android:offset="0.6" android:color="#E0A438"/><item android:offset="1" android:color="#E0A43800"/></gradient></aapt:attr></path>
+    <path android:pathData="M0,182 Q60,160 120,178 Q180,198 240,174 L240,240 L0,240 Z" android:fillColor="#2B2438" android:fillAlpha="0.9"/>
+    <path android:pathData="M42,182 L42,156 L64,156 L64,182 Z" android:fillColor="#B45C7A"/>
+    <path android:pathData="M38,156 L53,138 L68,156 Z" android:fillColor="#2B2438"/>
+    <path android:pathData="M84,184 L84,150 L112,150 L112,184 Z" android:fillColor="#4FA88A"/>
+    <path android:pathData="M79,150 L98,128 L117,150 Z" android:fillColor="#2B2438"/>
+    <path android:pathData="M132,186 L132,162 L156,162 L156,186 Z" android:fillColor="#6B4E8E"/>
+    <path android:pathData="M127,162 L144,142 L161,162 Z" android:fillColor="#2B2438"/>
+    <group android:name="lupa" android:pivotX="160" android:pivotY="118" android:rotation="-18">
+        <path android:pathData="M160,118 m-52,0 a52,52 0 1 0 104,0 a52,52 0 1 0 -104,0" android:strokeColor="#2B2438" android:strokeWidth="14"/>
+        <path android:pathData="M160,118 m-52,0 a52,52 0 1 0 104,0 a52,52 0 1 0 -104,0" android:fillAlpha="0.32"><aapt:attr name="android:fillColor"><gradient android:type="radial" android:centerX="160" android:centerY="118" android:gradientRadius="52"><item android:offset="0" android:color="#FCEBBE"/><item android:offset="0.55" android:color="#E0A438"/><item android:offset="1" android:color="#8A5E1E"/></gradient></aapt:attr></path>
+        <path android:pathData="M146,102 m-14,0 a14,14 0 1 0 28,0 a14,14 0 1 0 -28,0" android:fillColor="#FFFFFF" android:fillAlpha="0.35"/>
+        <path android:pathData="M197,155 L226,184" android:strokeColor="#E0A438" android:strokeWidth="16" android:strokeLineCap="round"/>
+    </group>
+</vector>

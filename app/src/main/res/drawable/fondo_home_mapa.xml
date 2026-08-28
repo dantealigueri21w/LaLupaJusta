@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fondo esquematico "home_mapa" de La Lupa Justa. Generado por
+     documentos-fuente/_scripts-generadores/gen_lalupajusta_vector.py, no editar a mano. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="320dp" android:height="200dp"
+    android:viewportWidth="320" android:viewportHeight="200">
+    <path android:pathData="M0,0 L320,0 L320,200 L0,200 Z" android:fillColor="#F7F4FA"/>
+    <path android:pathData="M0,0 L320,0 L320,200 L0,200 Z"><aapt:attr name="android:fillColor"><gradient android:type="linear" android:startX="160" android:startY="0" android:endX="160" android:endY="200"><item android:offset="0" android:color="#6B4E8E8C"/><item android:offset="0.55" android:color="#9C82B88C"/><item android:offset="1" android:color="#F7F4FA00"/></gradient></aapt:attr></path>
+    <path android:pathData="M262,30 m-90,0 a90,90 0 1 0 180,0 a90,90 0 1 0 -180,0"><aapt:attr name="android:fillColor"><gradient android:type="radial" android:centerX="262" android:centerY="30" android:gradientRadius="180"><item android:offset="0" android:color="#FCEBBECC"/><item android:offset="1" android:color="#FCEBBE00"/></gradient></aapt:attr></path>
+    <path android:pathData="M0,148 C110,125 210,168 320,140 L320,200 L0,200 Z" android:fillColor="#E0A438" android:fillAlpha="0.6"/>
+    <path android:pathData="M57,130 L83,130 L83,156 L57,156 Z" android:fillColor="#6B4E8E"/>
+    <path android:pathData="M54,130 L70,112 L86,130 Z" android:fillColor="#2B2438"/>
+    <path android:pathData="M127,130 L153,130 L153,156 L127,156 Z" android:fillColor="#B45C7A"/>
+    <path android:pathData="M124,130 L140,112 L156,130 Z" android:fillColor="#2B2438"/>
+    <path android:pathData="M197,130 L223,130 L223,156 L197,156 Z" android:fillColor="#4FA88A"/>
+    <path android:pathData="M194,130 L210,112 L226,130 Z" android:fillColor="#2B2438"/>
+    <path android:pathData="M247,130 L273,130 L273,156 L247,156 Z" android:fillColor="#E0A438"/>
+    <path android:pathData="M244,130 L260,112 L276,130 Z" android:fillColor="#2B2438"/>
+</vector>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ilustracion de resultado (revelacion del sesgo). Pieza hero (detallada). Generada por
+     documentos-fuente/_scripts-generadores/gen_lalupajusta_vector.py, no editar a mano. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="240dp" android:height="240dp"
+    android:viewportWidth="240" android:viewportHeight="240">
+    <path android:pathData="M0,0 L240,0 L240,240 L0,240 Z" android:fillColor="#F7F4FA"/>
+    <path android:pathData="M120,52 m-62,0 a62,62 0 1 0 124,0 a62,62 0 1 0 -124,0" android:fillAlpha="0.5"><aapt:attr name="android:fillColor"><gradient android:type="radial" android:centerX="120" android:centerY="52" android:gradientRadius="110"><item android:offset="0" android:color="#FCEBBE"/><item android:offset="0.45" android:color="#E0A438"/><item android:offset="1" android:color="#E0A43800"/></gradient></aapt:attr></path>
+    <path android:pathData="M70,150 L104,150 a4,4 0 0 1 4,4 l0,48 a4,4 0 0 1 -4,4 l-34,0 a4,4 0 0 1 -4,-4 l0,-48 a4,4 0 0 1 4,-4 z"><aapt:attr name="android:fillColor"><gradient android:type="linear" android:startX="87" android:startY="150" android:endX="87" android:endY="206"><item android:offset="0" android:color="#B45C7A"/><item android:offset="1" android:color="#8A3F55"/></gradient></aapt:attr></path>
+    <path android:pathData="M130,120 L164,120 a4,4 0 0 1 4,4 l0,78 a4,4 0 0 1 -4,4 l-34,0 a4,4 0 0 1 -4,-4 l0,-78 a4,4 0 0 1 4,-4 z"><aapt:attr name="android:fillColor"><gradient android:type="linear" android:startX="147" android:startY="120" android:endX="147" android:endY="206"><item android:offset="0" android:color="#4FA88A"/><item android:offset="1" android:color="#317A63"/></gradient></aapt:attr></path>
+    <path android:pathData="M60,206 L180,206" android:strokeColor="#2B2438" android:strokeWidth="5" android:strokeLineCap="round"/>
+    <group android:name="lupaResultado" android:pivotX="120" android:pivotY="52" android:rotation="-14">
+        <path android:pathData="M120,52 m-34,0 a34,34 0 1 0 68,0 a34,34 0 1 0 -68,0" android:strokeColor="#2B2438" android:strokeWidth="9"/>
+        <path android:pathData="M120,52 m-34,0 a34,34 0 1 0 68,0 a34,34 0 1 0 -68,0" android:fillColor="#E0A438" android:fillAlpha="0.25"/>
+        <path android:pathData="M144,76 L166,98" android:strokeColor="#2B2438" android:strokeWidth="10" android:strokeLineCap="round"/>
+    </group>
+</vector>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Icono de caso "transporte_colegio" de La Lupa Justa. Generado por gen_lalupajusta_vector.py, no editar a mano. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="120dp" android:height="120dp"
+    android:viewportWidth="240" android:viewportHeight="240">
+    <path android:pathData="M120,8 A112,112 0 1 1 119.9,8 Z"><aapt:attr name="android:fillColor"><gradient android:type="radial" android:centerX="96" android:centerY="78" android:gradientRadius="200"><item android:offset="0" android:color="#F7F4FA"/><item android:offset="0.6" android:color="#F0E9F7"/><item android:offset="1" android:color="#B45C7A"/></gradient></aapt:attr></path>
+    <path android:pathData="M120,8 A112,112 0 1 1 119.9,8 Z" android:strokeColor="#6B4E8E" android:strokeWidth="5"/>
+    <path android:pathData="M84,110 L156,110 L156,118 L84,118 Z" android:fillColor="#2B2438"/>
+    <path android:pathData="M90,118 L90,160" android:strokeColor="#2B2438" android:strokeWidth="6" android:strokeLineCap="round"/>
+    <path android:pathData="M150,118 L150,160" android:strokeColor="#2B2438" android:strokeWidth="6" android:strokeLineCap="round"/>
+    <path android:pathData="M96,126 L144,126 L144,156 L96,156 Z" android:fillColor="#B45C7A" android:fillAlpha="0.55"/>
+</vector>

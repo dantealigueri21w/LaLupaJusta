@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Icono de caso "caso_final" de La Lupa Justa. Generado por gen_lalupajusta_vector.py, no editar a mano. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="120dp" android:height="120dp"
+    android:viewportWidth="240" android:viewportHeight="240">
+    <path android:pathData="M120,8 A112,112 0 1 1 119.9,8 Z"><aapt:attr name="android:fillColor"><gradient android:type="radial" android:centerX="96" android:centerY="78" android:gradientRadius="200"><item android:offset="0" android:color="#F7F4FA"/><item android:offset="0.6" android:color="#F0E9F7"/><item android:offset="1" android:color="#B45C7A"/></gradient></aapt:attr></path>
+    <path android:pathData="M120,8 A112,112 0 1 1 119.9,8 Z" android:strokeColor="#6B4E8E" android:strokeWidth="5"/>
+    <path android:pathData="M98,130 m-18,0 a18,18 0 1 0 36,0 a18,18 0 1 0 -36,0" android:strokeColor="#4FA88A" android:strokeWidth="5"/>
+    <path android:pathData="M126,148 L142,116 L158,148 Z" android:fillColor="#B45C7A"/>
+    <path android:pathData="M150,96 L170,96 L170,110 L150,110 Z" android:fillColor="#2B2438"/>
+</vector>

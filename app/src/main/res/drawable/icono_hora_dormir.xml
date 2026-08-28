@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Icono de caso "hora_dormir" de La Lupa Justa. Generado por gen_lalupajusta_vector.py, no editar a mano. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="120dp" android:height="120dp"
+    android:viewportWidth="240" android:viewportHeight="240">
+    <path android:pathData="M120,8 A112,112 0 1 1 119.9,8 Z"><aapt:attr name="android:fillColor"><gradient android:type="radial" android:centerX="96" android:centerY="78" android:gradientRadius="200"><item android:offset="0" android:color="#F7F4FA"/><item android:offset="0.6" android:color="#F0E9F7"/><item android:offset="1" android:color="#B45C7A"/></gradient></aapt:attr></path>
+    <path android:pathData="M120,8 A112,112 0 1 1 119.9,8 Z" android:strokeColor="#6B4E8E" android:strokeWidth="5"/>
+    <path android:pathData="M78,130 L78,164 L128,164 L128,130 L103,106 Z" android:fillColor="#6B4E8E"/>
+    <path android:pathData="M156,98 m-12,0 a12,12 0 1 0 24,0 a12,12 0 1 0 -24,0" android:fillColor="#E0A438"/>
+    <path android:pathData="M156,110 L156,164" android:strokeColor="#2B2438" android:strokeWidth="5" android:strokeLineCap="round"/>
+</vector>

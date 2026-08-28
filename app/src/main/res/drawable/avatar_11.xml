@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Avatar 11 de La Lupa Justa. Generado por gen_lalupajusta_vector.py, no editar a mano. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="96dp" android:height="96dp"
+    android:viewportWidth="240" android:viewportHeight="240">
+    <path android:pathData="M120,8 A112,112 0 1 1 119.9,8 Z" android:fillColor="#F7F4FA"/>
+    <path android:pathData="M76,178 Q76,132 120,132 Q164,132 164,178 Z"><aapt:attr name="android:fillColor"><gradient android:type="radial" android:centerX="88" android:centerY="68" android:gradientRadius="200"><item android:offset="0" android:color="#6B4E8E"/><item android:offset="1" android:color="#2B2438"/></gradient></aapt:attr></path>
+    <path android:pathData="M120,98 m-34,0 a34,34 0 1 0 68,0 a34,34 0 1 0 -68,0"><aapt:attr name="android:fillColor"><gradient android:type="radial" android:centerX="88" android:centerY="68" android:gradientRadius="200"><item android:offset="0" android:color="#6B4E8E"/><item android:offset="1" android:color="#2B2438"/></gradient></aapt:attr></path>
+    <path android:pathData="M98,128 L142,128 a5,5 0 0 1 5,5 l0,0 a5,5 0 0 1 -5,5 l-44,0 a5,5 0 0 1 -5,-5 l0,0 a5,5 0 0 1 5,-5 z" android:fillColor="#B45C7A"/>
+</vector>
