@@ -11,6 +11,7 @@ data class PersonajePoblacion(
     val grupo: String,
     val zona: String,
     val rasgo: String,
+    val nombre: String = "",
 )
 
 data class Caso(

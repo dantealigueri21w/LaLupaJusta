@@ -47,7 +47,7 @@ class LupaJustaRepository(private val db: AppDatabase) {
 
     suspend fun obtenerPoblacionDeCaso(casoId: String): List<PersonajePoblacion> =
         db.personajePoblacionDao().obtenerPorCaso(casoId).map {
-            PersonajePoblacion(id = it.id, grupo = it.grupo, zona = it.zona, rasgo = it.rasgo)
+            PersonajePoblacion(id = it.id, grupo = it.grupo, zona = it.zona, rasgo = it.rasgo, nombre = it.nombre)
         }
 
     suspend fun resolverCaso(casoId: String, personajesElegidosIds: List<String>): ResultadoCasoResumen {
