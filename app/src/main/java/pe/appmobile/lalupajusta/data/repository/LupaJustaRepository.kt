@@ -23,6 +23,8 @@ data class ResultadoCasoResumen(
     val tipoSesgo: String?,
 )
 
+data class CasoConEstado(val caso: CasoEntity, val resuelto: Boolean)
+
 class LupaJustaRepository(private val db: AppDatabase) {
 
     suspend fun sembrarSiEsPrimerLanzamiento() {
@@ -41,7 +43,11 @@ class LupaJustaRepository(private val db: AppDatabase) {
 
     suspend fun resolverCaso(casoId: String, personajesElegidosIds: List<String>): ResultadoCasoResumen {
         val poblacion = obtenerPoblacionDeCaso(casoId)
-        val muestra = poblacion.filter { it.id in personajesElegidosIds }
+        // Mapea la lista de ids elegidos (preserva repeticiones y orden) en vez de filtrar la
+        // poblacion ya unica por pertenencia -- filtrar eliminaba cualquier repeticion antes de
+        // que MotorSesgo pudiera detectarla, y el sesgo por "repeticion" nunca se disparaba
+        // jugando de verdad (ver handoffs/HANDOFF-68-LA-LUPA-JUSTA.md, seccion 0.2).
+        val muestra = personajesElegidosIds.mapNotNull { id -> poblacion.firstOrNull { it.id == id } }
 
         val prediccion = MotorMuestra.calcularPrediccion(muestra)
         val valorReal = MotorPoblacionReal.calcularValorReal(poblacion)
@@ -69,6 +75,13 @@ class LupaJustaRepository(private val db: AppDatabase) {
         }
 
         return ResultadoCasoResumen(prediccion, valorReal, acerto, tipoSesgo)
+    }
+
+    suspend fun obtenerCasosConEstado(): List<CasoConEstado> {
+        val resueltos = db.resultadoCasoDao().obtenerTodos().map { it.casoId }.toSet()
+        return db.casoDao().obtenerTodos().sortedBy { it.orden }.map { caso ->
+            CasoConEstado(caso, caso.id in resueltos)
+        }
     }
 
     suspend fun obtenerPendientesDeRepasoHoy(hoy: Long): List<RepasoPendiente> =
