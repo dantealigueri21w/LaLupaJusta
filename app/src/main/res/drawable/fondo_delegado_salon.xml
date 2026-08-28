@@ -3,12 +3,14 @@
      documentos-fuente/_scripts-generadores/gen_lalupajusta_vector.py, no editar a mano. -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:aapt="http://schemas.android.com/aapt"
-    android:width="320dp" android:height="200dp"
-    android:viewportWidth="320" android:viewportHeight="200">
-    <path android:pathData="M0,0 L320,0 L320,200 L0,200 Z" android:fillColor="#F7F4FA"/>
-    <path android:pathData="M0,0 L320,0 L320,200 L0,200 Z"><aapt:attr name="android:fillColor"><gradient android:type="linear" android:startX="160" android:startY="0" android:endX="160" android:endY="200"><item android:offset="0" android:color="#6B4E8E8C"/><item android:offset="0.55" android:color="#9C82B88C"/><item android:offset="1" android:color="#F7F4FA00"/></gradient></aapt:attr></path>
-    <path android:pathData="M262,30 m-90,0 a90,90 0 1 0 180,0 a90,90 0 1 0 -180,0"><aapt:attr name="android:fillColor"><gradient android:type="radial" android:centerX="262" android:centerY="30" android:gradientRadius="180"><item android:offset="0" android:color="#FCEBBECC"/><item android:offset="1" android:color="#FCEBBE00"/></gradient></aapt:attr></path>
-    <path android:pathData="M0,160 L320,160 L320,200 L0,200 Z" android:fillColor="#6B4E8E" android:fillAlpha="0.6"/>
+    android:width="240dp" android:height="520dp"
+    android:viewportWidth="240" android:viewportHeight="520">
+    <path android:pathData="M0,0 L240,0 L240,520 L0,520 Z" android:fillColor="#F7F4FA"/>
+    <path android:pathData="M0,0 L240,0 L240,520 L0,520 Z"><aapt:attr name="android:fillColor"><gradient android:type="linear" android:startX="120" android:startY="0" android:endX="120" android:endY="520"><item android:offset="0" android:color="#6B4E8E8C"/><item android:offset="0.55" android:color="#9C82B88C"/><item android:offset="1" android:color="#F7F4FA00"/></gradient></aapt:attr></path>
+    <path android:pathData="M180,94 m-150,0 a150,150 0 1 0 300,0 a150,150 0 1 0 -300,0"><aapt:attr name="android:fillColor"><gradient android:type="radial" android:centerX="180" android:centerY="94" android:gradientRadius="300"><item android:offset="0" android:color="#FCEBBECC"/><item android:offset="1" android:color="#FCEBBE00"/></gradient></aapt:attr></path>
+    <group android:name="escena_delegado_salon" android:translateY="370" android:scaleX="0.75" android:scaleY="0.75">
+        <path android:pathData="M0,160 L320,160 L320,200 L0,200 Z" android:fillColor="#6B4E8E" android:fillAlpha="0.6"/>
     <path android:pathData="M228,96 L292,96 L292,136 L228,136 Z" android:fillColor="#2B2438"/>
     <path android:pathData="M236,104 L284,104 L284,128 L236,128 Z" android:fillColor="#F7F4FA" android:fillAlpha="0.9"/>
+    </group>
 </vector>

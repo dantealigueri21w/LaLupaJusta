@@ -93,6 +93,8 @@ class LupaJustaRepository(private val db: AppDatabase) {
         }
     }
 
+    suspend fun obtenerResultados(): List<ResultadoCasoEntity> = db.resultadoCasoDao().obtenerTodos()
+
     suspend fun obtenerPendientesDeRepasoHoy(hoy: Long): List<RepasoPendiente> =
         db.repasoPendienteDao().obtenerPendientesParaHoy(hoy).map {
             RepasoPendiente(it.itemId, it.fechaUltimoFallo, it.intervaloDias, it.proximaRevision)

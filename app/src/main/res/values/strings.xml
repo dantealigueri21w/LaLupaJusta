@@ -52,6 +52,16 @@
     <string name="caso_ayuda_boton">Pedir ayuda a Chihua</string>
     <string name="caso_ayuda_texto">Toca a varios personajes distintos entre sí para armar tu muestra, y luego confirma.</string>
 
+    <!-- Cuaderno de Casos -->
+    <string name="cuaderno_titulo">El Cuaderno de Casos</string>
+    <string name="cuaderno_contador">%1$d caso(s) registrados</string>
+    <string name="cuaderno_vacio">Todavía no resolviste ningún caso. Vuelve al mapa y toca un lugar del pueblo.</string>
+    <string name="cuaderno_acerto">Acertaste: tu muestra fue justa</string>
+    <string name="cuaderno_sin_sesgo">No acertaste, sin sesgo claro</string>
+    <string name="cuaderno_sesgo_grupo">Sesgo por grupo</string>
+    <string name="cuaderno_sesgo_cercania">Sesgo por cercanía</string>
+    <string name="cuaderno_sesgo_repeticion">Sesgo por repetición</string>
+
     <!-- Parental gate -->
     <string name="gate_instruccion">Mantén presionado 3 segundos</string>
     <string name="gate_titulo">Zona para quien acompaña</string>

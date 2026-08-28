@@ -15,11 +15,13 @@ import androidx.navigation.navArgument
 import kotlinx.coroutines.launch
 import pe.appmobile.lalupajusta.data.repository.LupaJustaRepository
 import pe.appmobile.lalupajusta.ui.screens.CasoScreen
+import pe.appmobile.lalupajusta.ui.screens.CuadernoScreen
 import pe.appmobile.lalupajusta.ui.screens.HomeScreen
 import pe.appmobile.lalupajusta.ui.screens.OnboardingScreen
 import pe.appmobile.lalupajusta.ui.screens.ParentalGateScreen
 import pe.appmobile.lalupajusta.ui.screens.PerfilScreen
 import pe.appmobile.lalupajusta.ui.viewmodel.CasoViewModel
+import pe.appmobile.lalupajusta.ui.viewmodel.CuadernoViewModel
 import pe.appmobile.lalupajusta.ui.viewmodel.HomeViewModel
 import pe.appmobile.lalupajusta.ui.viewmodel.PerfilViewModel
 
@@ -29,6 +31,7 @@ object Rutas {
     const val CASO = "caso/{casoId}"
     const val PARENTAL_GATE = "parental_gate"
     const val PERFIL = "perfil"
+    const val CUADERNO = "cuaderno"
     fun caso(id: String) = "caso/$id"
 }
 
@@ -56,7 +59,7 @@ fun NavGraph(repository: LupaJustaRepository, esPrimerLanzamiento: Boolean) {
             HomeScreen(
                 uiState = uiState,
                 onCasoClick = { navController.navigate(Rutas.caso(it)) },
-                onCuadernoClick = { /* pantalla propia -- ver "Que queda fuera" del plan */ },
+                onCuadernoClick = { navController.navigate(Rutas.CUADERNO) },
                 onPerfilClick = { navController.navigate(Rutas.PERFIL) },
                 onAjustesClick = { navController.navigate(Rutas.PARENTAL_GATE) },
             )
@@ -88,6 +91,11 @@ fun NavGraph(repository: LupaJustaRepository, esPrimerLanzamiento: Boolean) {
         }
         composable(Rutas.PARENTAL_GATE) {
             ParentalGateScreen(repository = repository)
+        }
+        composable(Rutas.CUADERNO) {
+            val viewModel: CuadernoViewModel = viewModel(factory = CuadernoViewModel.Factory(repository))
+            val uiState by viewModel.uiState.collectAsStateWithLifecycle()
+            CuadernoScreen(uiState = uiState)
         }
     }
 }
