@@ -104,3 +104,22 @@
   import (I-04).
 - Sumado `nombre` a `PersonajePoblacion` (dominio) para que los lectores de pantalla lean el
   nombre real de cada personaje en los `contentDescription`, no su id interno.
+
+## Cierre de la Fase 1
+
+- `git push origin main` hecho con permiso explícito de Rodrigo.
+- Workflow `android-build` (run 33207258097): **completed / success**. Confirmado entrando a la
+  corrida por la API de GitHub, no solo por el check verde — el artifact `apk` existe de verdad
+  (12 923 908 bytes, `expired: false`), a diferencia del bug real de Base de Campo donde el job
+  marcaba éxito con un archivo oculto vacío.
+- APK descargado del artifact, extraído como `LaLupaJusta.v1.0.0.apk` (13 451 871 bytes) y
+  copiado a `68.LaLupaJusta/4.LaLupaJusta.v1.0.0.apk` — este es el entregable, no la build local.
+- `apksigner verify --print-certs` sobre ese archivo: firmado con el keystore de depuración por
+  defecto (`CN=Android Debug`), sin datos personales.
+- `aapt2 dump badging` sobre ese archivo: `versionName='1.0.0'` coincide con el nombre del
+  archivo; sin permiso `INTERNET` (solo el `DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION` que agrega
+  el propio sistema, no una capacidad real de red); `icon='res/mipmap-anydpi-v26/ic_launcher.xml'`
+  real, nunca vacío.
+- SHA-256 del APK que de verdad se entrega:
+  `cf4937ea9878284a87725e58d888db3b632d3518cb66f6241f0eb289f05ba9da`. No coincide (ni tiene por
+  qué) con el hash de la build local — cada máquina firma con su propio keystore de depuración.
