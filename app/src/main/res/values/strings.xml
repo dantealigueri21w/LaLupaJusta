@@ -1,4 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">La Lupa Justa</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_1_titulo">Bienvenido a La Lupa Justa</string>
+    <string name="onboarding_1_texto">Chihua necesita tu ayuda para preguntar bien antes de predecir.</string>
+    <string name="onboarding_2_titulo">A quién eliges decide la respuesta</string>
+    <string name="onboarding_2_texto">Toca un puñado de personajes para armar tu muestra. Cuantos más grupos distintos toques, más justa será tu predicción.</string>
+    <string name="onboarding_3_titulo">La verdad se revela al final</string>
+    <string name="onboarding_3_texto">Compara tu predicción contra el dato real de todo el pueblo, y descubre si hubo sesgo.</string>
+    <string name="onboarding_4_titulo">Sin internet, sin cuentas</string>
+    <string name="onboarding_4_texto">Todo lo que hagas se guarda en este dispositivo. Nunca se pide tu nombre real.</string>
+    <string name="onboarding_continuar">Continuar</string>
+    <string name="onboarding_empezar">Empezar</string>
+
+    <!-- Perfil / onboarding -->
+    <string name="perfil_titulo">Tu perfil de reportero</string>
+    <string name="perfil_alias_etiqueta">Tu apodo de reportero</string>
+    <string name="perfil_avatar_titulo">Elige tu avatar</string>
+    <string name="perfil_guardar">Guardar</string>
+    <string name="perfil_cd_avatar">Avatar %1$d</string>
+    <string name="perfil_cd_avatar_elegido">Avatar %1$d, elegido</string>
+    <string name="onboarding_5_titulo">Elige tu apodo y tu avatar</string>
+
+    <!-- Home -->
+    <string name="home_titulo">El Mapa del Pueblo</string>
+    <string name="home_saludo">Hola, %1$s</string>
+    <string name="home_cd_perfil">Ver perfil</string>
+    <string name="home_cd_ajustes">Zona para quien acompaña</string>
+    <string name="home_cd_cuaderno">Abrir el Cuaderno de Casos</string>
+    <string name="home_estado_resuelto">Caso resuelto</string>
+    <string name="home_estado_pendiente">Por resolver</string>
+    <string name="home_estado_bloqueado">Bloqueado. %1$s</string>
+    <string name="home_bloqueado_condicion">Completa %1$d caso(s) más para desbloquear esto</string>
+    <string name="home_progreso">%1$d de %2$d casos resueltos</string>
+
+    <!-- Caso -->
+    <string name="caso_muestra_contador">Tu muestra: %1$d de %2$d</string>
+    <string name="caso_cd_personaje">%1$s, sin elegir todavía</string>
+    <string name="caso_cd_personaje_elegido">%1$s, elegido %2$d veces</string>
+    <string name="caso_prediccion_en_vivo">Tu predicción hasta ahora: %1$s</string>
+    <string name="caso_deshacer">Deshacer el último toque</string>
+    <string name="caso_confirmar_muestra">Confirmar muestra</string>
+    <string name="caso_resultado_prediccion">Tu predicción: %1$s</string>
+    <string name="caso_resultado_real">El dato real de todo el pueblo: %1$s</string>
+    <string name="caso_resultado_acierto">¡Acertaste! Tu muestra fue justa.</string>
+    <string name="caso_resultado_fallo_sin_sesgo">No acertaste esta vez, aunque tu muestra parecía justa. Puede pasar por azar con muestras chicas.</string>
+    <string name="caso_sesgo_grupo">Tocaste demasiado a un mismo grupo. Por eso tu predicción no coincidió con la real.</string>
+    <string name="caso_sesgo_cercania">Tocaste solo a quienes estaban cerca entre sí. Por eso tu predicción no coincidió con la real.</string>
+    <string name="caso_sesgo_repeticion">Tocaste a la misma persona más de una vez. Eso cuenta su opinión de más.</string>
+    <string name="caso_ayuda_boton">Pedir ayuda a Chihua</string>
+    <string name="caso_ayuda_texto">Toca a varios personajes distintos entre sí para armar tu muestra, y luego confirma.</string>
+
+    <!-- Parental gate -->
+    <string name="gate_instruccion">Mantén presionado 3 segundos</string>
+    <string name="gate_titulo">Zona para quien acompaña</string>
+    <string name="gate_progreso_titulo">Progreso del niño</string>
+    <string name="gate_ajustes_sonido">Sonido</string>
+    <string name="gate_ajustes_vibracion">Vibración</string>
+    <string name="gate_version">Versión %1$s</string>
+
+    <!-- Ajustes -->
+    <string name="ajustes_titulo">Ajustes</string>
+    <string name="ajustes_sonido">Sonido</string>
+    <string name="ajustes_vibracion">Vibración</string>
 </resources>
